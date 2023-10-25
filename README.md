@@ -11,13 +11,6 @@ The bottom navigation bar consists of multiple items in the form of text labels,
 
 A bottom navigation bar is usually used in conjunction with a Scaffold, where it is provided as the Scaffold.bottomNavigationBar argument.
 
-The bottom navigation bar's type changes how its items are displayed. If not specified, then it's automatically set to BottomNavigationBarType.fixed when there are less than four items, and BottomNavigationBarType.shifting otherwise.
-
-The length of items must be at least two and each item's icon and title/label must not be null.
-
-    BottomNavigationBarType.fixed, the default when there are less than four items. The selected item is rendered with the selectedItemColor if it's non-null, otherwise the theme's ColorScheme.primary color is used for Brightness.light themes and ColorScheme.secondary for Brightness.dark themes. If backgroundColor is null, The navigation bar's background color defaults to the Material background color, ThemeData.canvasColor (essentially opaque white).
-    BottomNavigationBarType.shifting, the default when there are four or more items. If selectedItemColor is null, all items are rendered in white. The navigation bar's background color is the same as the BottomNavigationBarItem.backgroundColor of the selected item. In this case it's assumed that each item will have a different background color and that background color will contrast well with white.
-
 
 ![B0viy](https://user-images.githubusercontent.com/6410761/159561424-fc8b1f5d-9e08-430d-8ef1-9751b97e31c8.png)
 
